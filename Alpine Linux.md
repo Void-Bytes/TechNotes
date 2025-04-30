@@ -305,5 +305,9 @@ doas apk add mousepad
 ```
 mousepad my_file.txt
 ```
+**Mousepad on Alpine Linux with XFCE**
+![[mousepad-alpine.PNG]]
+**Mousepad on Linux Mint (XFCE Edition)**
+![[mousepad-mint.PNG]]
 ___
 
