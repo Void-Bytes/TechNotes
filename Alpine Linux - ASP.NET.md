@@ -1,4 +1,3 @@
-
 ## Setup Shell Commands
 
 ### Binding to specific ports and host names
