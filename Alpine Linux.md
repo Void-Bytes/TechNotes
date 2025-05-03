@@ -6,7 +6,7 @@ This page contains tips for the general configuration of Alpine Linux.
 - YouTube Video: **[Introduction to APK, OpenRC, doas](https://www.youtube.com/watch?v=EaCCB3y1ZGM)**
 # Setup
 This section describes how to set up Alpine Linux once the installation media has been created. Your first should look something like this:
-![[firstboot.PNG]]
+![[_Assets/Alpine Linux/firstboot.PNG]]
 ## Step 1 - Log in as root
 Conveniently, on first boot the default username is "root" and there is no password.
 Once you have logged in you should be welcomed by the "message of the day":
@@ -310,4 +310,23 @@ mousepad my_file.txt
 **Mousepad on Linux Mint (XFCE Edition)**
 ![[mousepad-mint.PNG]]
 ___
+### xrdp
+Remote desktop protocol host that facilitates GUI interactions with the device from another computer through programs like Windows "Remote Desktop Connection".
+#### Installation
+```bash
+# Install necessary packages
+doas apk add xrdp xorgxrdp
 
+# Start RDP services
+rc-service xrdp start
+rc-service xrdp-sesman start
+
+# Configure RDP services to run on boot
+rc-update add xrdp
+rc-update add xrdp-sesman
+```
+### Examples
+**Connecting with Remote Desktop Connection on Windows**
+![[xrdp-connect.PNG]]
+**Logging into xrdp**
+![[xrdp-login.PNG]]

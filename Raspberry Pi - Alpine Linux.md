@@ -15,7 +15,7 @@ Select your Pi device, and then find the 64-bit version of Alpine Linux under "O
 
 Since the image file size is tiny, imaging the SD card should be a very fast process. Once it is completed, load the card into your Raspberry Pi and connect the other necessary peripherals like a keyboard and display. If everything is working correctly, you should be greeted by the Alpine Linux login screen.
 
-![[firstboot.PNG]]
+![[_Assets/Alpine Linux/firstboot.PNG]]
 
 ## **Step 4** - Start to setup Alpine Linux
 From here the steps to set up are extremely similar, so I will refer you to the [[Alpine Linux]] "Getting Started" section for most of this step. Return to Step 5 once you reach the setup stage "Disk & Install".
